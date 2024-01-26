@@ -1,0 +1,26 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios17.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name QuizEngine
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import QuizEngine
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class Game<Question, Answer, R> where Question == R.Question, Answer == R.Answer, R : QuizEngine.Router {
+  @objc deinit
+}
+public func startGame<Question, Answer, R>(questions: [Question], router: R, correctAnswers: [Question : Answer]) -> QuizEngine.Game<Question, Answer, R> where Question == R.Question, Answer == R.Answer, R : QuizEngine.Router
+public protocol Router {
+  associatedtype Question : Swift.Hashable
+  associatedtype Answer : Swift.Equatable
+  typealias ResultType = QuizEngine.Result<Self.Question, Self.Answer>
+  typealias AnswerCallback = (Self.Answer) -> Swift.Void
+  func route(to question: Self.Question, answerCallback: @escaping (Self.Answer) -> Swift.Void)
+  func route(to result: Self.ResultType)
+}
+public struct Result<Question, Answer> where Question : Swift.Hashable, Answer : Swift.Equatable {
+  public let answers: [Question : Answer]
+  public let score: Swift.Int
+}

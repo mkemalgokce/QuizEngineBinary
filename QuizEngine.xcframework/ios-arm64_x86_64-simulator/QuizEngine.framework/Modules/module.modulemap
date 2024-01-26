@@ -1,0 +1,11 @@
+framework module QuizEngine {
+  umbrella header "QuizEngine.h"
+  export *
+
+  module * { export * }
+}
+
+module QuizEngine.Swift {
+  header "QuizEngine-Swift.h"
+  requires objc
+}

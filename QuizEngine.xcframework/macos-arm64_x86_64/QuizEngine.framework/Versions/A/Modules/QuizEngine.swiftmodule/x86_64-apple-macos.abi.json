@@ -1,0 +1,438 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuizEngine",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuizEngine",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Game",
+        "printedName": "Game",
+        "declKind": "Class",
+        "usr": "s:10QuizEngine4GameC",
+        "mangledName": "$s10QuizEngine4GameC",
+        "moduleName": "QuizEngine",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 == τ_0_2.Question, τ_0_1 == τ_0_2.Answer, τ_0_2 : QuizEngine.Router>",
+        "sugared_genericSig": "<Question, Answer, R where Question == R.Question, Answer == R.Answer, R : QuizEngine.Router>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Function",
+        "name": "startGame",
+        "printedName": "startGame(questions:router:correctAnswers:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Game",
+            "printedName": "QuizEngine.Game<τ_0_0, τ_0_1, τ_0_2>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_1"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_2"
+              }
+            ],
+            "usr": "s:10QuizEngine4GameC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[τ_0_0]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sa"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_2"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Dictionary",
+            "printedName": "[τ_0_0 : τ_0_1]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_1"
+              }
+            ],
+            "usr": "s:SD"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10QuizEngine9startGame9questions6router14correctAnswersAA0D0Cyxq_q0_GSayxG_q0_SDyxq_Gt8QuestionQy0_Rsz6AnswerQy0_Rs_AA6RouterR0_r1_lF",
+        "mangledName": "$s10QuizEngine9startGame9questions6router14correctAnswersAA0D0Cyxq_q0_GSayxG_q0_SDyxq_Gt8QuestionQy0_Rsz6AnswerQy0_Rs_AA6RouterR0_r1_lF",
+        "moduleName": "QuizEngine",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 == τ_0_2.Question, τ_0_1 == τ_0_2.Answer, τ_0_2 : QuizEngine.Router>",
+        "sugared_genericSig": "<Question, Answer, R where Question == R.Question, Answer == R.Answer, R : QuizEngine.Router>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuizEngine",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Router",
+        "printedName": "Router",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "Question",
+            "printedName": "Question",
+            "declKind": "AssociatedType",
+            "usr": "s:10QuizEngine6RouterP8QuestionQa",
+            "mangledName": "$s10QuizEngine6RouterP8QuestionQa",
+            "moduleName": "QuizEngine",
+            "protocolReq": true
+          },
+          {
+            "kind": "AssociatedType",
+            "name": "Answer",
+            "printedName": "Answer",
+            "declKind": "AssociatedType",
+            "usr": "s:10QuizEngine6RouterP6AnswerQa",
+            "mangledName": "$s10QuizEngine6RouterP6AnswerQa",
+            "moduleName": "QuizEngine",
+            "protocolReq": true
+          },
+          {
+            "kind": "Function",
+            "name": "route",
+            "printedName": "route(to:answerCallback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Question"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0.Answer) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Answer"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10QuizEngine6RouterP5route2to14answerCallbacky8QuestionQz_y6AnswerQzctF",
+            "mangledName": "$s10QuizEngine6RouterP5route2to14answerCallbacky8QuestionQz_y6AnswerQzctF",
+            "moduleName": "QuizEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuizEngine.Router>",
+            "sugared_genericSig": "<Self where Self : QuizEngine.Router>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "route",
+            "printedName": "route(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "QuizEngine.Result<τ_0_0.Question, τ_0_0.Answer>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Question"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Answer"
+                  }
+                ],
+                "usr": "s:10QuizEngine6ResultV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10QuizEngine6RouterP5route2toyAA6ResultVy8QuestionQz6AnswerQzG_tF",
+            "mangledName": "$s10QuizEngine6RouterP5route2toyAA6ResultVy8QuestionQz6AnswerQzG_tF",
+            "moduleName": "QuizEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuizEngine.Router>",
+            "sugared_genericSig": "<Self where Self : QuizEngine.Router>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10QuizEngine6RouterP",
+        "mangledName": "$s10QuizEngine6RouterP",
+        "moduleName": "QuizEngine",
+        "genericSig": "<τ_0_0.Answer : Swift.Equatable, τ_0_0.Question : Swift.Hashable>",
+        "sugared_genericSig": "<Self.Answer : Swift.Equatable, Self.Question : Swift.Hashable>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuizEngine",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Result",
+        "printedName": "Result",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "answers",
+            "printedName": "answers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[τ_0_0 : τ_0_1]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10QuizEngine6ResultV7answersSDyxq_Gvp",
+            "mangledName": "$s10QuizEngine6ResultV7answersSDyxq_Gvp",
+            "moduleName": "QuizEngine",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[τ_0_0 : τ_0_1]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10QuizEngine6ResultV7answersSDyxq_Gvg",
+                "mangledName": "$s10QuizEngine6ResultV7answersSDyxq_Gvg",
+                "moduleName": "QuizEngine",
+                "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_1 : Swift.Equatable>",
+                "sugared_genericSig": "<Question, Answer where Question : Swift.Hashable, Answer : Swift.Equatable>",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "score",
+            "printedName": "score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10QuizEngine6ResultV5scoreSivp",
+            "mangledName": "$s10QuizEngine6ResultV5scoreSivp",
+            "moduleName": "QuizEngine",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10QuizEngine6ResultV5scoreSivg",
+                "mangledName": "$s10QuizEngine6ResultV5scoreSivg",
+                "moduleName": "QuizEngine",
+                "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_1 : Swift.Equatable>",
+                "sugared_genericSig": "<Question, Answer where Question : Swift.Hashable, Answer : Swift.Equatable>",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10QuizEngine6ResultV",
+        "mangledName": "$s10QuizEngine6ResultV",
+        "moduleName": "QuizEngine",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_1 : Swift.Equatable>",
+        "sugared_genericSig": "<Question, Answer where Question : Swift.Hashable, Answer : Swift.Equatable>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuizEngine",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mkg\/Developer\/QuizEngine\/QuizEngine\/Game.swift",
+      "kind": "IntegerLiteral",
+      "offset": 875,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mkg\/Developer\/QuizEngine\/QuizEngine\/Game.swift",
+      "kind": "IntegerLiteral",
+      "offset": 954,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mkg\/Developer\/QuizEngine\/QuizEngine\/Game.swift",
+      "kind": "IntegerLiteral",
+      "offset": 958,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mkg\/Developer\/QuizEngine\/QuizEngine\/Flow.swift",
+      "kind": "Dictionary",
+      "offset": 321,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mkg\/Developer\/QuizEngine\/QuizEngine\/Flow.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1136,
+      "length": 1,
+      "value": "1"
+    }
+  ]
+}
